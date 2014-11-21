@@ -1,0 +1,30 @@
+import android.content.Context;
+import android.view.View;
+import android.widget.*;
+import android.view.LayoutInflater;
+
+public class TestView {
+
+	 public View view;
+	 public Context context;
+
+${}.dy
+
+	 public TestView(Context context){
+		 view=LayoutInflater.from(context).inflate(R.layout.${}.filename, null);
+		 this.context=context;
+		 find();
+	 }
+
+ 
+	 public TestView(View view,Context context){
+		 this.view=view;
+		 this.context=context;
+		 find();
+	 }
+
+	 private void find() {
+${}.new
+	 }
+
+}

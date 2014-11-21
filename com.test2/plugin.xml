@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="true"
+            id="com.test2.contribution1"
+            objectClass="org.eclipse.core.resources.IFile">
+         <menu
+               label="生成java"
+               path="additions"
+               id="com.test2.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="测试view"
+               class="com.test2.popup.actions.TestAction"
+               menubarPath="com.test2.menu1/group1"
+               enablesFor="1"
+               id="com.test2.TestAction">
+         </action>
+         <action
+               label="生成TestView"
+               class="com.test2.popup.actions.ActivityViewAction"
+               menubarPath="com.test2.menu1/group1"
+               enablesFor="1"
+               id="com.test2.ActivityViewAction">
+         </action>
+         <action
+               label="生成TestActivity"
+               class="com.test2.popup.actions.ActivityAction"
+               menubarPath="com.test2.menu1/group1"
+               enablesFor="1"
+               id="com.test2.ActivityAction">
+         </action>
+         <action
+               label="生成TestAdapter"
+               class="com.test2.popup.actions.AdapterAction"
+               menubarPath="com.test2.menu1/group1"
+               enablesFor="1"
+               id="com.test2.AdapterAction">
+         </action>
+         <action
+               label="生成TestAdapter和ItemView"
+               class="com.test2.popup.actions.AdapterItemViewAction"
+               menubarPath="com.test2.menu1/group1"
+               enablesFor="1"
+               id="com.test2.AdapterItemViewAction">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>
